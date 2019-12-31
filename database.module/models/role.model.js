@@ -8,15 +8,15 @@ connection.model(Role, {
     },
     title: 'string',
     description: 'string',
-    // user:{
-    //     type: "relationship",
-    //     target: User,
-    //     relationship: "USER",
-    //     direction: "out",
-    //     properties: {
-    //         name: "string"
-    //     }
-    // }
+    user:{
+        type: "relationship",
+        target: User,
+        relationship: "USER",
+        direction: "out",
+        properties: {
+            name: "string"
+        }
+    }
 });
 
 module.exports = connection.model(Role);

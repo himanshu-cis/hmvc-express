@@ -21,11 +21,5 @@ connection.model(User, {
     }
 });
 
-instance.model('User').all().then(console.log)
-// instance.cypher('MATCH (tom {first_name: "Welcome to the Real World"}) RETURN tom')
-// .then(data => {
-//     console.log("TCL: data", data)
-// })
-// .catch(console.log)
 
 module.exports = connection.model(User);
